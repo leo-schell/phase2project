@@ -1,4 +1,4 @@
-![textme_cover.png](attachment:textme_cover.png)
+![textme_cover.png](https://github.com/leo-schell/phase2project/blob/main/Images/textme_cover.png?raw=true)
 
 **Authors**: John Nahra, Gligor Vasilev, Leo Schell Villanueva
 

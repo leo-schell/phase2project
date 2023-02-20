@@ -4,9 +4,13 @@
 
 <details><summary>TABLE OF CONTENTS</summary>
 <p>
-    - Bottom Line and Background
-    - Analyzing the Data
-    - Notebook Summaries
+    - [Bottom Line](#-overview)
+    
+    - [Business Understanding](#-business-understanding)
+    
+    - [The Data](#-the-data)
+    
+    - [Notebook Summaries](#-notebook-summaries)
     
 </p>
 </details>

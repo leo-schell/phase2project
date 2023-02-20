@@ -29,7 +29,7 @@ The Seattle’s Social Housing Authority’s main goal is to build housing for t
 
 ***As of 2022, Seattle’s Area Median Income (AMI) is $120,907[^1].***
 
-In this analysis, we define middle-income families as two-person, three-person, or four-person households who make 80-120\% of Seattle's AMI.
+In this analysis, we define middle-income families as two-person, three-person, or four-person households who make 80-120% of Seattle's AMI.
 
 
 Using a 30% rent to income ratio means they can spend between $2400 and $3600 a month on rent. Median single family monthly rent in the area is around $3000. Thus, if we can buy up median-priced homes, we would only need to discount up to $600 for the lower range of the income threshold.
@@ -46,8 +46,8 @@ We aquired data from the following sources:
 
 The analysis estimates the budget needed for the SSHA to buy 1000 homes for middle-income families. To do this, we created a linear regression model that predicts price based on select characteristics of a home:
 - `bedrooms`: only 2-3 bedrooms
-- `price`: under \\$2 million
-- `zipcode`: with in zip codes containing mean incomes under \\$200k
+- `price`: under $2 million
+- `zipcode`: with in zip codes containing mean incomes under $200k
 - `sqft_lot`: lot square footage under 10,000 to minimize budget costs
 - `grade`: only homes fit for living with a score above 4
 - `condition`: examined the price of homes that need major or minor repairs
@@ -82,26 +82,26 @@ This notebook contains the beginnings of further data exploration. In this noteb
 
 In our model, homes in good condition cost about $100k more than homes in bad condition all else equal.
 
-***2021 and 2022 Were Two Different Housing Markets
+***2021 and 2022 Were Two Different Housing Markets***
 
 ![Year.png](https://github.com/leo-schell/phase2project/blob/main/Images/Year.png)
 
 Homes were selling for more in the first half of 2022 than in 2021. However, mortgage rates have since risen dramatically and home prices have begun to fall. We are assuming in our budget estimates that 2023 prices may be more similar to 2021 than 2022.
 
 
-***More Bedrooms, Higher Price
+***More Bedrooms, Higher Price***
 
 ![Bedrooms.png](https://github.com/leo-schell/phase2project/blob/main/Images/Bedrooms.png)
 
 According to our model, a 3-bedroom home costs $15,000 more than a 2-bedroom home all else equal.
 
-***Wealthier Neighborhoods Command Higher Home Prices
+***Wealthier Neighborhoods Command Higher Home Prices***
 
 ![Zip Code.png](https://github.com/leo-schell/phase2project/blob/main/Images/Zip%20Code.png)
 
 Our fourth variable is zipcodes grouped into 3 mean income bins: 50 to 100 k, 100 to 150 k, and 150 to 200 k. Homes tend to be more expensive in wealthier neighborhoods.
 
-***Living Space Square Footage Most Positive Correlated with Price
+***Living Space Square Footage Most Positive Correlated with Price***
 
 ![Square Foot.png](https://github.com/leo-schell/phase2project/blob/main/Images/Square%20Foot.png)
 

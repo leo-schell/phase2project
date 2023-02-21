@@ -20,9 +20,9 @@ In April 2021, the City of Seattle released a [Market Rate Housing Needs and Sup
 - Seattle’s middle-income families have been priced out of home ownership and “down-rent” units that would otherwise be available to low-income families.
 - Nearly 46,000 households in the area are considered ‘cost-burdened’ as they spend more than half of their income on rent each month. 
 
-Frustrations over the housing crisis have reached a boiling point and Initiative 135 was put to vote in the local election on February 14th, 2023. If passed, the city will create a new Seattle Social Housing Authority to address the housing shortage. As of today, February 19th, votes are still being counted but we remain optimistic. 
+Frustrations over the housing crisis have reached a boiling point, and Initiative 135 was put to vote in the local election on February 14th, 2023. If passed, the city will create a new Seattle Social Housing Authority to address the housing shortage. As of February 19th, votes were still being counted but we remain optimistic. 
 
-The Seattle’s Social Housing Authority’s main goal is to build housing for those making under the city’s median income. However, we propose that the city also consider acquiring housing attractive to middle-income families immediately.
+The Seattle Social Housing Authority’s main goal is to build housing for those making under the city’s median income. However, we propose that the city also consider acquiring housing attractive to middle-income families immediately.
 
 
 ## Seattle's Middle-Income Households
@@ -63,7 +63,7 @@ The 'Notebooks' folder contains early data exploration conducted by individual t
 
 Our final sample contained 5260 houses to use for our model.
 
-First, we ran a baseline dummy regressor model using mean price as the explanatory variable. Unsurprisingly, this model wasn't great, with an R-squared of 0 and a Root Mean Squared Error (RMSE) of almost $300,000
+First, we ran a baseline dummy regressor model using mean price as the explanatory variable. Unsurprisingly, this model wasn't great, with an R-squared of 0 and a Root Mean Squared Error (RMSE) of almost $300,000.
 
 Next, we ran a simple linear regression model using living space square footage as the only explanatory variable. Living space square footage was chosen because it had the highest correlation with price.
 
@@ -100,9 +100,9 @@ According to our model, a 3-bedroom home costs $15,000 more than a 2-bedroom hom
 
 ![Zip Code.png](https://github.com/leo-schell/phase2project/blob/main/Images/Zip%20Code.png)
 
-Our fourth variable is zipcodes grouped into 3 mean income bins: 50 to 100 k, 100 to 150 k, and 150 to 200 k. Homes tend to be more expensive in wealthier neighborhoods.
+Our fourth variable is zipcodes grouped into 3 mean income bins: $50-$100k, $100-$150k, and $150-$200k. Homes tend to be more expensive in wealthier neighborhoods.
 
-***Living Space Square Footage Most Positive Correlated with Price***
+***Living Space Square Footage Most Positively Correlated with Price***
 
 ![Square Foot.png](https://github.com/leo-schell/phase2project/blob/main/Images/Square%20Foot.png)
 

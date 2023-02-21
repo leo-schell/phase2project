@@ -18,7 +18,7 @@ Seattle's problem is it has a major housing shortage.
 In April 2021, the City of Seattle released a [Market Rate Housing Needs and Supply Analysis](https://www.seattle.gov/Documents/Departments/OPCD/OngoingInitiatives/HousingChoices/SeattleMarketRateHousingNeedsAndSupplyAnalysis2021.pdf) detailing the complexities of the housing shortage in the area:
 - There is specifically a shortage in affordable and available rental units available to families making under 80% of Seattle’s Area Median Income (AMI).
 - Seattle’s middle-income families have been priced out of home ownership and “down-rent” units that would otherwise be available to low-income families.
-- Nearly 46,000 households in the area are considered ‘cost-burdened’, as they spend more than half of their income on rent each month. 
+- Nearly 46,000 households in the area are considered ‘cost-burdened’ as they spend more than half of their income on rent each month. 
 
 Frustrations over the housing crisis have reached a boiling point and Initiative 135 was put to vote in the local election on February 14th, 2023. If passed, the city will create a new Seattle Social Housing Authority to address the housing shortage. As of today, February 19th, votes are still being counted but we remain optimistic. 
 
@@ -44,13 +44,13 @@ We aquired data from the following sources:
 - IRS SOI Tax Stats - Individual Income Tax Statistics - ZIP Code Data[^2]
 - The Seattle Office of Housing Needs & Supply Analysis
 
-The analysis estimates the budget needed for the SSHA to buy 1000 homes for middle-income families. To do this, we created a linear regression model that predicts price based on select characteristics of a home:
+This analysis estimates the budget needed for the SSHA to buy 1000 homes for middle-income families. To do this, we created a linear regression model that predicts price based on select characteristics of a home:
 - `bedrooms`: only 2-3 bedrooms
 - `price`: under $2 million
-- `zipcode`: with in zip codes containing mean incomes under $200k
-- `sqft_lot`: lot square footage under 10,000 to minimize budget costs
-- `grade`: only homes fit for living with a score above 4
-- `condition`: examined the price of homes that need major or minor repairs
+- `zipcode`: within zip codes containing mean incomes under $200k
+- `sqft_lot`: lot square footage under 10,000 to minimize costs
+- `grade`: only with a construction quality of improvements score above 4
+- `condition`: homes that are immediately inhabitable
 
 
 
@@ -111,9 +111,13 @@ The final variable in our model is square footage of living space. Our model sug
 
 Based on our model, we can derive budget estimates for the Seattle Social Housing Authority. 
 
+
+
 We calculated estimates for average-sized 2-3 bedroom homes in good condition for each income zipcode, ranging from $650 million at the low end to $930 million at the high end. 
 
 We can also calculate rough rental market rates based on these home prices, which range from $2600-$3700 per month. Recall that our middle-income households can afford $2400-$3600, so we should be able to rent out these homes without discounting significantly.
+
+# Next Steps
 
 Ultimately, the long-term fix to a limited affordable housing supply is to build more homes.
 
@@ -126,12 +130,12 @@ This plan frees up entry-level housing for low-income households. And it will be
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── Index.ipynb                         <- Narrative documentation of analysis in Jupyter notebook
-├── Slides.pdf                          <- PDF version of project presentation
-├── Appendixi.ipynb                     <- Narrative documentation of analysis in Jupyter notebook
+├── Final_Notebook.ipynb                <- Narrative documentation of linear regression model in Jupyter notebook
+├── presentation.pdf                    <- PDF version of project presentation
+├── Appendixi.ipynb                     <- Further analysis in Jupyter notebook
 ├── data                                <- Both sourced externally and generated from code
 ├── notebooks                           <- Individual exploratory notebooks
-└── images                              <- Both sourced externally and generated from code
+└── images                              <- Content repository
 ```
 
 

@@ -31,6 +31,7 @@ The Seattle’s Social Housing Authority’s main goal is to build housing for t
 
 In this analysis, we define middle-income families as two-person, three-person, or four-person households who make 80-120% of Seattle's AMI.
 
+![Middle-Income Families.png](https://github.com/leo-schell/phase2project/blob/main/Images/Middle-Income%20Families.png)
 
 Using a 30% rent to income ratio means they can spend between $2400 and $3600 a month on rent. Median single family monthly rent in the area is around $3000. Thus, if we can buy up median-priced homes, we would only need to discount up to $600 for the lower range of the income threshold.
 
@@ -111,7 +112,7 @@ The final variable in our model is square footage of living space. Our model sug
 
 Based on our model, we can derive budget estimates for the Seattle Social Housing Authority. 
 
-
+![Budget Estimates.png](https://github.com/leo-schell/phase2project/blob/main/Images/Budget%20Estimates.png)
 
 We calculated estimates for average-sized 2-3 bedroom homes in good condition for each income zipcode, ranging from $650 million at the low end to $930 million at the high end. 
 
